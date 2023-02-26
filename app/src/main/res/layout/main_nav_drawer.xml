@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:onClick="ClickHome">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon"
+            android:id="@+id/nav_bar_icon"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Witku"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/teal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/nav_bar_icon"
+            android:src="@drawable/ic_menu" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menujuabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_about"
+        android:onClick="ClickAbout"/>
+
+    <ImageView
+        android:id="@+id/menujutimbangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_scale"
+        android:onClick="ClickTimbangan"/>
+
+    <ImageView
+        android:id="@+id/menujukonsul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_consul"
+        android:onClick="ClickKonsul"/>
+
+    <ImageView
+        android:id="@+id/menujukeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logout"
+        android:onClick="ClickKeluar"/>
 </LinearLayout>
